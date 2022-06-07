@@ -7,9 +7,9 @@ This is a movie website built using HTML CSS and Javascript
 This website is hosted on netlify
 
 ```bash
-Navigate to https://cheery-sawine-b67567.netlify.app
-```
 
+```
+Navigate to https://cheery-sawine-b67567.netlify.app
 
 
 ## License
