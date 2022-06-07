@@ -31,7 +31,6 @@ body{
 
  .logo-container{
      flex: 2;
-     font-family: 'Lora', serif;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -39,6 +38,7 @@ body{
 
  .logo{
      font-size: 35px;
+     font-family: 'Montserrat', sans-serif;
  }
 
  .menu-container{
@@ -79,31 +79,7 @@ body{
     outline: none;
 }
 
-.toggle{
-    margin-left: 10px;
-    width: 45px;
-    height: 20px;
-    background-color: white;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around; 
-    position: relative;  
-}
 
-.moon,.sun{
-    color: var(--secondary);
-}
-
-.toggle-ball{
-    width: 18px;
-    height:18px;
-    background-color:var(--secondary);
-    border-radius: 50%;
-    position: absolute;
-    right: 1px;
-    cursor: pointer;
-}
 
 .sidebar{
     width: 50px;
@@ -133,6 +109,16 @@ body{
 .featured-content{
     height: 70vh;
     background: linear-gradient(to bottom,rgba(105, 102, 102, 0),#1e2129), url('https://ntvb.tmsimg.com/assets/p17710222_b_h8_aa.jpg?w=1280&h=720');
+    background-size: cover;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-content-2{
+    height: 70vh;
+    background: linear-gradient(to bottom,rgba(105, 102, 102, 0),#1e2129), url('https://popculturetimes.com/wp-content/uploads/2020/09/Dark.png');
     background-size: cover;
     color: var(--white);
     display: flex;
@@ -280,6 +266,7 @@ opacity: 1;
 }
 .movie-list-wrapper{
     position: relative;
+    overflow: hidden;
 }
 .arrow{
     font-size: 120px;
