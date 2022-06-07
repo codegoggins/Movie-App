@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root{
+    --primary:#00acc1;
+    --secondary:#1e2129;
+    --white:#ECF0F1;
+}
+
+
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color:var(--secondary);
+}
+
+ .navbar-container{
+     display: flex;
+     align-items: center;
+     padding: 0 50px;
+     height: 100%;
+     color: var(--white);
+ }
+
+ .logo-container{
+     flex: 2;
+     font-family: 'Lora', serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .logo{
+     font-size: 35px;
+ }
+
+ .menu-container{
+     flex:6;
+ }
+
+.search-container{
+    flex: 3;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu-list-item{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.search-icon{
+    cursor: pointer;
+}
+
+.search-text{
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--secondary);
+    color: grey;
+}
+
+.search-text::placeholder{
+    color: grey;
+    font-size: 15px;
+}
+
+.search-text:focus{
+    outline: none;
+}
+
+.toggle{
+    margin-left: 10px;
+    width: 45px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    position: relative;  
+}
+
+.moon,.sun{
+    color: var(--secondary);
+}
+
+.toggle-ball{
+    width: 18px;
+    height:18px;
+    background-color:var(--secondary);
+    border-radius: 50%;
+    position: absolute;
+    right: 1px;
+    cursor: pointer;
+}
+
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: var(--secondary);
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-menu-icon{
+    color: var(--white);
+    padding-top: 80px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.container{
+    background-color:var(--secondary);
+    min-height: calc(100vh - 50px);
+}
+.content-container{
+    margin-left: 50px;
+}
+
+.featured-content{
+    height: 70vh;
+    background: linear-gradient(to bottom,rgba(105, 102, 102, 0),#1e2129), url('https://ntvb.tmsimg.com/assets/p17710222_b_h8_aa.jpg?w=1280&h=720');
+    background-size: cover;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-title{
+  font-size: 50px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+.featured-description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.featured-buttons{
+   margin-left: 10px;
+   font-family: 'Montserrat', sans-serif;
+   margin-top: 20px;
+}
+
+.watch-btn{
+   width: 150px;
+   height: 35px;
+   border-radius: 18px;
+   border: 1px solid var(--primary);
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   background: transparent;
+   color: var(--primary);
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.watch-btn:hover{
+  background-color: var(--primary);
+  color: black;
+}
+
+.add-btn{
+    width: 150px;
+    height: 35px;
+    border-radius: 18px;
+    border: 1px solid var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background: transparent;
+    color: var(--white);
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.add-btn:hover{
+    background-color: var(--white);
+    color: black;
+  }
+
+.new-releases > h1{
+    font-family: 'Archivo Narrow', sans-serif;
+    color: var(--white);
+    letter-spacing: 0.5px;
+}
+
+.new-releases{
+    padding: 15px;
+}
+
+
+
+.movie-list{
+    display: flex;
+    height: 300px;
+    align-items: center;
+}
+
+.movie-list-item{
+    margin-right:30px;
+}
+.movie-list-item-img{
+    width: 300px;
+    height: 240px;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+}
